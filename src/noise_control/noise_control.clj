@@ -42,3 +42,9 @@
 (defn english?
   [s]
   (= (detect-language s) "en"))
+
+(defn filter-english-only [sentences]
+  (filter english? sentences))
+
+(defn character-filter [sentences]
+  )
